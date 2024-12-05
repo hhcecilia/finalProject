@@ -1,0 +1,220 @@
+
+$primary-color: #0073e6;
+$secondary-color: #005bb5;
+$text-color: #333;
+$background-color: #f4f4f4;
+$light-background: #e9f7fe;
+
+$font-stack: Arial, sans-serif;
+
+$padding-default: 20px;
+$margin-default: 10px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font-stack;
+    line-height: 1.6;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+header {
+    background: $primary-color;
+    color: white;
+    padding: $padding-default 0;
+    text-align: center;
+  
+    nav {
+      background: $secondary-color;
+      padding: 10px 0;
+  
+      ul.nav-menu {
+        list-style: none;
+        text-align: center;
+  
+        li {
+          display: inline;
+          margin: 0 $margin-default;
+  
+          a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  #home {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('../images/lawn.jpg') no-repeat center center/cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  #about {
+    padding: 30px 20px;
+    background: $light-background;
+    text-align: center;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: $margin-default;
+      color: $primary-color;
+    }
+  
+    p {
+      margin: $margin-default 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  #services {
+    padding: 30px 20px;
+    background: #ffffff;
+  
+    h2 {
+      text-align: center;
+      color: $text-color;
+      font-size: 2rem;
+      margin-bottom: $margin-default;
+    }
+  
+    h3 {
+      color: $primary-color;
+      font-size: 1.5rem;
+      margin-top: $margin-default;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+  
+      th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+  
+      th {
+        background: $light-background;
+      }
+  
+      td {
+        background: #fafafa;
+      }
+    }
+  }
+  #quote-form {
+    padding: 30px 20px;
+    background: $light-background;
+  
+    form {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: $padding-default;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  
+      label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+      }
+  
+      input, button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+  
+      button {
+        background: $primary-color;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+  
+        &:hover {
+          background: $secondary-color;
+        }
+      }
+    }
+  
+    #quote-output {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      text-align: center;
+  
+      .error {
+        color: red;
+        font-weight: bold;
+      }
+    }
+  }
+  footer {
+    background: $secondary-color;
+    color: white;
+    padding: $padding-default;
+    text-align: center;
+  
+    a {
+      color: #f0f8ff;
+      text-decoration: none;
+      margin: 0 10px;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .nav-menu li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    #home h1 {
+      font-size: 2rem;
+    }
+  
+    #services table {
+      font-size: 0.9rem;
+    }
+  
+    #quote-form input, #quote-form button {
+      font-size: 0.9rem;
+    }
+  }
+        
+        
